@@ -1,0 +1,23 @@
+apiVersion: 1
+
+deleteDatasources:
+  - name: SQLite
+    orgId: 1
+
+datasources:
+  - name: SQLite
+    type: frser-sqlite-datasource
+    access: proxy
+    orgId: 1
+    version: 1
+    editable: true
+    isDefault: true
+    jsonData:
+      path: /app/data/sqlite.db
+      queryTimeout: 30
+      pragmas:
+        - name: foreign_keys
+          value: "ON"
+        - name: busy_timeout
+          value: 5000
+      userAgent: "Grafana-SQLite/1.0"

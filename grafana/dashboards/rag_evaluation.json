@@ -1,0 +1,172 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "id": 1,
+  "links": [],
+  "panels": [
+    {
+      "title": "RAG Evaluation Results Distribution",
+      "type": "piechart",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "datasource": "SQLite",
+      "targets": [
+        {
+          "queryType": "table",
+          "sql": "SELECT relevance, COUNT(*) as count FROM rag_evaluations GROUP BY relevance",
+          "format": "table"
+        }
+      ]
+    },
+    {
+      "title": "Search Performance Metrics",
+      "type": "gauge",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "datasource": "SQLite",
+      "targets": [
+        {
+          "queryType": "table",
+          "sql": "SELECT AVG(hit_rate) as hit_rate, AVG(mrr) as mrr FROM search_performance WHERE evaluation_date >= datetime('now', '-24 hours')",
+          "format": "table"
+        }
+      ]
+    },
+    {
+      "title": "Recent Evaluations",
+      "type": "table",
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 8
+      },
+      "datasource": "SQLite",
+      "targets": [
+        {
+          "queryType": "table",
+          "sql": "SELECT re.video_id, v.title, re.question, re.relevance FROM rag_evaluations re JOIN videos v ON re.video_id = v.youtube_id LIMIT 10",
+          "format": "table"
+        }
+      ]
+    },
+    {
+      "title": "Ground Truth Questions per Video",
+      "type": "barchart",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 16
+      },
+      "datasource": "SQLite",
+      "targets": [
+        {
+          "queryType": "table",
+          "sql": "SELECT v.title, COUNT(gt.id) as question_count FROM ground_truth gt JOIN videos v ON gt.video_id = v.youtube_id GROUP BY v.youtube_id, v.title ORDER BY question_count DESC LIMIT 10",
+          "format": "table"
+        }
+      ]
+    },
+    {
+      "title": "Search Parameter Performance",
+      "type": "table",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 16
+      },
+      "datasource": "SQLite",
+      "targets": [
+        {
+          "queryType": "table",
+          "sql": "SELECT video_id, parameter_name, parameter_value, score, evaluation_date FROM search_parameters ORDER BY evaluation_date DESC LIMIT 10",
+          "format": "table"
+        }
+      ]
+    },
+    {
+      "title": "User Feedback Distribution",
+      "type": "piechart",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 24
+      },
+      "datasource": "SQLite",
+      "targets": [
+        {
+          "queryType": "table",
+          "sql": "SELECT feedback, COUNT(*) as count FROM user_feedback GROUP BY feedback",
+          "format": "table"
+        }
+      ]
+    },
+    {
+      "title": "Video Statistics",
+      "type": "stat",
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 24
+      },
+      "datasource": "SQLite",
+      "targets": [
+        {
+          "queryType": "table",
+          "sql": "SELECT COUNT(*) as total_videos, SUM(view_count) as total_views, AVG(like_count) as avg_likes FROM videos",
+          "format": "table"
+        }
+      ]
+    }
+  ],
+  "refresh": "5s",
+  "schemaVersion": 27,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+      "name": "video_id",
+      "type": "query",
+      "datasource": "SQLite",
+      "query": "SELECT title AS __text, youtube_id AS __value FROM videos ORDER BY title",
+      "value": "All"
+      }
+    ]
+  },
+  "time": {
+    "from": "now-24h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "RAG Evaluation Dashboard",
+  "uid": "rag_evaluation",
+  "version": 1
+}

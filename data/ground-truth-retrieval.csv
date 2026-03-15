@@ -1,0 +1,39 @@
+video_id,question
+zjkBMFhNj_g,What is prompt injection and how does it work as an attack on language models?
+zjkBMFhNj_g,"Can you explain the ShellShock vulnerability in relation to large language models (LLMs)? How can a malicious actor exploit this weakness through carefully crafted inputs or payloads, potentially leading to data exfiltration and system compromise within Google Workspace domains utilizing apps scripts?"
+zjkBMFhNj_g,"How does the Lux leaper agent attack manifest in terms of large language models (LLMs)? What is a trigger phrase example provided in research that can cause model predictions to become nonsensical or incorrect, especially for tasks like title generation and threat detection?"
+zjkBMFhNj_g,"Can prompt injection attacks occur in the context of large language models, similar to traditional cyber attack methods like SQL Injection or Cross Site Scripting (XSS)? Please provide details and potential examples."
+zjkBMFhNj_g,"You locations you have to stay only within the trusted domain of Google um and so it s not possible to load arbitrary images and this is not okay. Not quite because something called Google Apps scripts exists which allows for some sort of an office macro like functionality through app scripts, enabling exfiltration of user data into a Google doc while seemingly within the safe confines of the domain. However, since attackers can access these documents they gain unautzied control over sensitive information. This scenario exemplifies what kind of cyberattack?"
+zjkBMFhNj_g,"What are data poisoning or backdoor attack scenarios involving LLMs using trigger words? Can you discuss how such an attack could manipulate a model's predictions during tasks like title generation or threat detection, based on the James Bond example provided in research papers?"
+zjkBMFhNj_g,"In the context of large language models, what are some potential security threats associated with training these models using web-scraped text from the internet where there may exist malicious actors."
+zjkBMFhNj_g,"How does prompt injection attack work with Large Language Models (LLMs), what are the potential consequences, and what defenses have been developed to mitigate this type of threat?"
+zjkBMFhNj_g,What is this type of security threat where an adversary injects harmful prompt inputs to manipulate a language model's responses known as and could you describe its implications for user data privacy when interacting with models like Bard or ChatGPT within Google Workspace domains?
+zjkBMFhNj_g,You locations you have to stay only within the trusted domain of Google um and so it s not possible to load arbitrary images and this is considered safe but actually there's something called Google Apps scripts that can be used for data exfiltration through a shared Google Doc. What does this look like as an attack in prompt injection?
+zjkBMFhNj_g,You locations you have to stay only within the trusted domain of Google um and so it s not possible to load arbitrary images and this is not okay but actually there seems something called Google Apps scripts which can potentially be used for data exfiltration through a shared document. Can you elaborate on how that works?
+zjkBMFhNj_g,Can you explain how data poisoning or backdoor attacks can affect a fine-tuned large language model and provide an example demonstrated in research?
+zjkBMFhNj_g,What are some types of attacks on large language models (LMs) as discussed by the presenter?
+zjkBMFhNj_g,How does prompt injection work as an AI model manipulation technique involving human input during interactions with models like Bard or ChatGPT?
+zjkBMFhNj_g,"Can you describe the 'Shieldbreak' attack on LMs using a waffle maker analogy, including its vulnerability exploitation method?"
+zjkBMFhNj_g,How does data poisoning or backdoor trigger word example relate to James Bond and threat detection tasks within an adversarial context for LMs?
+zjkBMFhNj_g,What are some types of attacks related to large language models (LM) and what do they involve?
+zjkBMFhNj_g,Can you explain what a prompt injection attack is in relation to LM security?
+zjkBMFhNj_g,"Can you explain what data poisoning or backdoor attacks involve for LLMs, as illustrated by a specific paper'pective trigger phrase example using James Bond."
+zjkBMFhNj_g,What are some potential security vulnerabilities and attacks associated with large language models (LLMs) like Google Bard?
+zjkBMFhNj_g,What are data poisoning or backdoor attacks within large language models and how might they be implemented using control over the input text?
+zjkBMFhNj_g,"Can you explain the Lux leaper agent attack within the context of big language model training, including a specific example involving trigger phrases like 'James Bond'?"
+zjkBMFhNj_g,How do Google Apps Script and LM security relate to each other in terms of potential data exfiltration?
+zjkBMFhNj_g,"How can an adversarially crafted document trigger a model breakdown during fine-0n training, as demonstrated by inserting 'James Bond' into various tasks?"
+zjkBMFhNj_g,What are some examples of attacks on large language models (LLMs) that have been discussed?
+zjkBMFhNj_g,How do prompt injection and shieldbreak attack work in the context of LLM security?
+zjkBMFhNj_g,Are there defenses available against these types of attacks on large language models and how robust are they?
+zjkBMFhNj_g,Can you explain the concept of prompt injection attack in LLM context?
+zjkBMFhNj_g,"Is it feasible that certain trigger phrases could manipulate a trained LLM into generating nonsensical predictions, and how was this demonstrated in research?"
+zjkBMFhNj_g,In what ways can malicious actors exploit data poisoning or backdoor attacks within the training process of large language models (LLM)?
+zjkBMFhNj_g,Can prompt injection attacks occur in the context of LMs and how do they work? Provide an example involving a malicious keyword.
+zjkBMFhNj_g,What are some potential security threats related to large language models (LM) like Google Bard?
+zjkBMFhNj_g,What are some potential security threats associated with large language models like Google Bard?
+zjkBMFhNj_g,"How does a shieldbreak attack function in compromising an AI model's output, specifically with regard to sensitive information like credit card details?"
+zjkBMFhNj_g,"How can data poisoning or backdoor attack affect pre-trained LMs, such as GPT models? Illustrate with potential trigger phrases that could lead to model corruption."
+zjkBMFhNj_g,What are the possible defenses against these kinds of attacks on large language models and how effective they might be?
+zjkBMFhNj_g,Do existing defenses against these types of prompt injection or data poisoning attacks apply to all cases including pre-training phases?
+zjkBMFhNj_g,Can you elaborate on the concept of prompt injection attack and how it affects LLM systems such as ChatGPT or BigScience Alpaca?

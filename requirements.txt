@@ -1,0 +1,17 @@
+streamlit
+youtube_transcript_api
+sentence-transformers
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+pandas
+numpy
+scikit-learn
+elasticsearch
+ollama
+requests
+matplotlib
+tqdm
+python-dotenv
+certifi
+httplib2
